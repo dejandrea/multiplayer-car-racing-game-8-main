@@ -131,15 +131,9 @@ class Game {
         player.update();
       }
       this.handlePlayerControls();
-      const finishLine = height * 6 - 100;
+      
 
-      if (player.positionY > finishLine) {
-        gameState = 2;
-        player.rank += 1;
-        Player.updateCarsAtEnd(player.rank);
-        player.update();
-        this.showRank();
-      }
+      
 
       drawSprites();
     }
